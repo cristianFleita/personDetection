@@ -5,7 +5,7 @@ import numpy as np
 from random import randint
 import argparse
 
-filename = "../Images/pedestrians_6.jpg"
+filename = "../Images/pedestrians_2.jpg"
 
 parser = argparse.ArgumentParser(description='Run keypoint detection')
 parser.add_argument("--device", default="cpu", help="Device to inference on")
