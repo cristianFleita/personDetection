@@ -36,7 +36,8 @@ def main():
                         (x + w, y + h),  
                         (0, 0, 255), 
                         4)
-    
+
+    print(type(bounding_boxes))    
     bounding_boxes_list =bounding_boxes.tolist()
 
     json_object = json.dumps(bounding_boxes_list, indent=4)
