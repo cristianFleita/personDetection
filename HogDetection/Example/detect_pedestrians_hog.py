@@ -5,7 +5,7 @@ import numpy as np
 # Description: Detect pedestrians in an image using the
 #   Histogram of Oriented Gradients (HOG) method
 
-filename = "../Images/pedestrians_6.jpg"
+filename = "../../Images/Experiment/SET3/cam1_1193.jpg"
 
 def main():
     # Create a HOGDescriptor object
