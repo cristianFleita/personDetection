@@ -5,7 +5,7 @@ import numpy as np
 from random import randint
 import argparse
 
-filename = "../Images/pedestrians_2.jpg"
+filename = "../Images/Experiment/SET2/cam1_1103.jpg"
 
 parser = argparse.ArgumentParser(description='Run keypoint detection')
 parser.add_argument("--device", default="cpu", help="Device to inference on")
@@ -197,12 +197,27 @@ detected_keypoints = []
 keypoints_list = np.zeros((0,3))
 keypoint_id = 0
 threshold = 0.1
+kps_array = []
+dict = {
+        "key_point":"",
+        "value":""
+        }
 
 for part in range(nPoints):
     probMap = output[0,part,:,:]
     probMap = cv2.resize(probMap, (image1.shape[1], image1.shape[0]))
     keypoints = getKeypoints(probMap, threshold)
-    print("Keypoints - {} : {}".format(keypointsMapping[part], keypoints))
+
+    dict["key_point"] = keypointsMapping[part]
+    array_key_point = []
+    for keypoint in keypoints:
+        x = keypoint[0]
+        y = keypoint[1]
+        array_key_point.append([x,y])
+    dict["value"] = array_key_point
+    kps_array.append(dict.copy())
+
+    #print("{} : {}".format(keypointsMapping[part], keypoints))
     keypoints_with_id = []
     for i in range(len(keypoints)):
         keypoints_with_id.append(keypoints[i] + (keypoint_id,))
@@ -211,10 +226,10 @@ for part in range(nPoints):
 
     detected_keypoints.append(keypoints_with_id)
 
-# json_object = json.dumps(detected_keypoints, indent=4)
+json_object = json.dumps(kps_array, indent=4)
 
-# with open('detected_keypoints.json', 'w') as json_file:
-#         json_file.write(json_object)
+with open('detected_keypoints.json', 'w') as json_file:
+        json_file.write(json_object)
 
 frameClone = image1.copy()
 for i in range(nPoints):

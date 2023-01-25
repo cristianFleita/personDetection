@@ -1,0 +1,154 @@
+[
+    {
+        "key_point": "Nose",
+        "value": [
+            [
+                304,
+                223
+            ]
+        ]
+    },
+    {
+        "key_point": "Neck",
+        "value": [
+            [
+                314,
+                245
+            ]
+        ]
+    },
+    {
+        "key_point": "R-Sho",
+        "value": [
+            [
+                294,
+                245
+            ]
+        ]
+    },
+    {
+        "key_point": "R-Elb",
+        "value": [
+            [
+                294,
+                276
+            ]
+        ]
+    },
+    {
+        "key_point": "R-Wr",
+        "value": [
+            [
+                304,
+                276
+            ]
+        ]
+    },
+    {
+        "key_point": "L-Sho",
+        "value": [
+            [
+                325,
+                245
+            ]
+        ]
+    },
+    {
+        "key_point": "L-Elb",
+        "value": [
+            [
+                325,
+                276
+            ]
+        ]
+    },
+    {
+        "key_point": "L-Wr",
+        "value": [
+            [
+                315,
+                307
+            ]
+        ]
+    },
+    {
+        "key_point": "R-Hip",
+        "value": [
+            [
+                303,
+                297
+            ]
+        ]
+    },
+    {
+        "key_point": "R-Knee",
+        "value": [
+            [
+                294,
+                339
+            ]
+        ]
+    },
+    {
+        "key_point": "R-Ank",
+        "value": []
+    },
+    {
+        "key_point": "L-Hip",
+        "value": [
+            [
+                315,
+                298
+            ]
+        ]
+    },
+    {
+        "key_point": "L-Knee",
+        "value": [
+            [
+                314,
+                339
+            ]
+        ]
+    },
+    {
+        "key_point": "L-Ank",
+        "value": []
+    },
+    {
+        "key_point": "R-Eye",
+        "value": [
+            [
+                304,
+                215
+            ]
+        ]
+    },
+    {
+        "key_point": "L-Eye",
+        "value": [
+            [
+                313,
+                214
+            ]
+        ]
+    },
+    {
+        "key_point": "R-Ear",
+        "value": [
+            [
+                303,
+                224
+            ]
+        ]
+    },
+    {
+        "key_point": "L-Ear",
+        "value": [
+            [
+                315,
+                223
+            ]
+        ]
+    }
+]
