@@ -1,12 +1,7 @@
 [
     {
         "key_point": "Nose",
-        "value": [
-            [
-                304,
-                223
-            ]
-        ]
+        "value": []
     },
     {
         "key_point": "Neck",
@@ -21,7 +16,7 @@
         "key_point": "R-Sho",
         "value": [
             [
-                294,
+                324,
                 245
             ]
         ]
@@ -30,8 +25,8 @@
         "key_point": "R-Elb",
         "value": [
             [
-                294,
-                276
+                325,
+                256
             ]
         ]
     },
@@ -39,8 +34,8 @@
         "key_point": "R-Wr",
         "value": [
             [
-                304,
-                276
+                325,
+                267
             ]
         ]
     },
@@ -48,7 +43,7 @@
         "key_point": "L-Sho",
         "value": [
             [
-                325,
+                304,
                 245
             ]
         ]
@@ -57,8 +52,8 @@
         "key_point": "L-Elb",
         "value": [
             [
-                325,
-                276
+                303,
+                256
             ]
         ]
     },
@@ -66,8 +61,8 @@
         "key_point": "L-Wr",
         "value": [
             [
-                315,
-                307
+                303,
+                275
             ]
         ]
     },
@@ -75,8 +70,8 @@
         "key_point": "R-Hip",
         "value": [
             [
-                303,
-                297
+                315,
+                275
             ]
         ]
     },
@@ -84,21 +79,26 @@
         "key_point": "R-Knee",
         "value": [
             [
-                294,
-                339
+                315,
+                288
             ]
         ]
     },
     {
         "key_point": "R-Ank",
-        "value": []
+        "value": [
+            [
+                316,
+                308
+            ]
+        ]
     },
     {
         "key_point": "L-Hip",
         "value": [
             [
-                315,
-                298
+                304,
+                275
             ]
         ]
     },
@@ -106,39 +106,34 @@
         "key_point": "L-Knee",
         "value": [
             [
-                314,
-                339
+                304,
+                288
             ]
         ]
     },
     {
         "key_point": "L-Ank",
-        "value": []
-    },
-    {
-        "key_point": "R-Eye",
         "value": [
             [
                 304,
-                215
+                308
             ]
         ]
     },
     {
+        "key_point": "R-Eye",
+        "value": []
+    },
+    {
         "key_point": "L-Eye",
-        "value": [
-            [
-                313,
-                214
-            ]
-        ]
+        "value": []
     },
     {
         "key_point": "R-Ear",
         "value": [
             [
-                303,
-                224
+                314,
+                235
             ]
         ]
     },
@@ -146,8 +141,8 @@
         "key_point": "L-Ear",
         "value": [
             [
-                315,
-                223
+                305,
+                235
             ]
         ]
     }
