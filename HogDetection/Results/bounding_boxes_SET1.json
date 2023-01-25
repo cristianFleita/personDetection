@@ -1,0 +1,671 @@
+[
+    {
+        "file_name": "cam1_150.jpg",
+        "bounding_boxes": [
+            {
+                "x": 348,
+                "y": 207,
+                "width": 92,
+                "height": 185
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_1013.jpg",
+        "bounding_boxes": [
+            {
+                "x": 284,
+                "y": 211,
+                "width": 70,
+                "height": 139
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_120.jpg",
+        "bounding_boxes": [
+            {
+                "x": 188,
+                "y": 116,
+                "width": 71,
+                "height": 142
+            },
+            {
+                "x": 290,
+                "y": 260,
+                "width": 67,
+                "height": 134
+            },
+            {
+                "x": 253,
+                "y": 264,
+                "width": 89,
+                "height": 179
+            },
+            {
+                "x": 217,
+                "y": 78,
+                "width": 104,
+                "height": 209
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_240.jpg",
+        "bounding_boxes": [
+            {
+                "x": 296,
+                "y": 246,
+                "width": 82,
+                "height": 164
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_630.jpg",
+        "bounding_boxes": [
+            {
+                "x": 265,
+                "y": 200,
+                "width": 106,
+                "height": 211
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_1103.jpg",
+        "bounding_boxes": [
+            {
+                "x": 286,
+                "y": 210,
+                "width": 66,
+                "height": 133
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_210.jpg",
+        "bounding_boxes": [
+            {
+                "x": 287,
+                "y": 176,
+                "width": 78,
+                "height": 156
+            },
+            {
+                "x": 313,
+                "y": 252,
+                "width": 66,
+                "height": 132
+            },
+            {
+                "x": 219,
+                "y": 256,
+                "width": 109,
+                "height": 217
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_833.jpg",
+        "bounding_boxes": [
+            {
+                "x": 276,
+                "y": 206,
+                "width": 85,
+                "height": 170
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_1463.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam2_1193.jpg",
+        "bounding_boxes": [
+            {
+                "x": 251,
+                "y": 204,
+                "width": 70,
+                "height": 141
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_2040.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam1_1373.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam1_390.jpg",
+        "bounding_boxes": [
+            {
+                "x": 232,
+                "y": 163,
+                "width": 164,
+                "height": 317
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_1013.jpg",
+        "bounding_boxes": [
+            {
+                "x": 253,
+                "y": 204,
+                "width": 72,
+                "height": 144
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_743.jpg",
+        "bounding_boxes": [
+            {
+                "x": 240,
+                "y": 201,
+                "width": 92,
+                "height": 184
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_7_5.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam1_923.jpg",
+        "bounding_boxes": [
+            {
+                "x": 279,
+                "y": 209,
+                "width": 79,
+                "height": 157
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_15.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam2_923.jpg",
+        "bounding_boxes": [
+            {
+                "x": 251,
+                "y": 208,
+                "width": 76,
+                "height": 152
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_360.jpg",
+        "bounding_boxes": [
+            {
+                "x": 253,
+                "y": 248,
+                "width": 67,
+                "height": 134
+            },
+            {
+                "x": 236,
+                "y": 157,
+                "width": 167,
+                "height": 323
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_60.jpg",
+        "bounding_boxes": [
+            {
+                "x": 263,
+                "y": 307,
+                "width": 86,
+                "height": 172
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_1463.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam1_1193.jpg",
+        "bounding_boxes": [
+            {
+                "x": 281,
+                "y": 209,
+                "width": 68,
+                "height": 136
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_330.jpg",
+        "bounding_boxes": [
+            {
+                "x": 184,
+                "y": 75,
+                "width": 70,
+                "height": 141
+            },
+            {
+                "x": 202,
+                "y": 151,
+                "width": 173,
+                "height": 329
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_540.jpg",
+        "bounding_boxes": [
+            {
+                "x": 226,
+                "y": 190,
+                "width": 125,
+                "height": 249
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_15_30.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam1_300.jpg",
+        "bounding_boxes": [
+            {
+                "x": 247,
+                "y": 257,
+                "width": 77,
+                "height": 153
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_540.jpg",
+        "bounding_boxes": [
+            {
+                "x": 260,
+                "y": 194,
+                "width": 123,
+                "height": 246
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_2040.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam2_720.jpg",
+        "bounding_boxes": [
+            {
+                "x": 246,
+                "y": 199,
+                "width": 95,
+                "height": 191
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_120.jpg",
+        "bounding_boxes": [
+            {
+                "x": 339,
+                "y": 286,
+                "width": 92,
+                "height": 183
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_450.jpg",
+        "bounding_boxes": [
+            {
+                "x": 252,
+                "y": 189,
+                "width": 140,
+                "height": 280
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_15.jpg",
+        "bounding_boxes": [
+            {
+                "x": 219,
+                "y": 100,
+                "width": 68,
+                "height": 136
+            },
+            {
+                "x": 301,
+                "y": 31,
+                "width": 71,
+                "height": 142
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_1283.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam2_15_30.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam2_833.jpg",
+        "bounding_boxes": [
+            {
+                "x": 246,
+                "y": 201,
+                "width": 87,
+                "height": 174
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_60.jpg",
+        "bounding_boxes": [
+            {
+                "x": 239,
+                "y": 324,
+                "width": 77,
+                "height": 153
+            },
+            {
+                "x": 432,
+                "y": 348,
+                "width": 65,
+                "height": 130
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_1373.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam2_300.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam2_1103.jpg",
+        "bounding_boxes": [
+            {
+                "x": 257,
+                "y": 205,
+                "width": 68,
+                "height": 135
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_180.jpg",
+        "bounding_boxes": [
+            {
+                "x": 272,
+                "y": 264,
+                "width": 69,
+                "height": 138
+            },
+            {
+                "x": 215,
+                "y": 136,
+                "width": 109,
+                "height": 219
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_90.jpg",
+        "bounding_boxes": [
+            {
+                "x": 335,
+                "y": 283,
+                "width": 89,
+                "height": 178
+            },
+            {
+                "x": 258,
+                "y": 127,
+                "width": 77,
+                "height": 153
+            },
+            {
+                "x": 248,
+                "y": 77,
+                "width": 65,
+                "height": 130
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_150.jpg",
+        "bounding_boxes": [
+            {
+                "x": 190,
+                "y": 120,
+                "width": 69,
+                "height": 137
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_240.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam2_210.jpg",
+        "bounding_boxes": [
+            {
+                "x": 277,
+                "y": 248,
+                "width": 66,
+                "height": 132
+            },
+            {
+                "x": 186,
+                "y": 76,
+                "width": 66,
+                "height": 132
+            },
+            {
+                "x": 182,
+                "y": 258,
+                "width": 102,
+                "height": 204
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_270.jpg",
+        "bounding_boxes": [
+            {
+                "x": 203,
+                "y": 250,
+                "width": 86,
+                "height": 171
+            },
+            {
+                "x": 296,
+                "y": 245,
+                "width": 83,
+                "height": 166
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_630.jpg",
+        "bounding_boxes": [
+            {
+                "x": 235,
+                "y": 197,
+                "width": 105,
+                "height": 210
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_743.jpg",
+        "bounding_boxes": [
+            {
+                "x": 271,
+                "y": 205,
+                "width": 89,
+                "height": 179
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_30.jpg",
+        "bounding_boxes": [
+            {
+                "x": 373,
+                "y": 96,
+                "width": 99,
+                "height": 199
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_330.jpg",
+        "bounding_boxes": [
+            {
+                "x": 249,
+                "y": 251,
+                "width": 71,
+                "height": 141
+            },
+            {
+                "x": 263,
+                "y": 207,
+                "width": 79,
+                "height": 158
+            },
+            {
+                "x": 240,
+                "y": 160,
+                "width": 167,
+                "height": 320
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_7_5.jpg",
+        "bounding_boxes": [
+            {
+                "x": 86,
+                "y": 171,
+                "width": 67,
+                "height": 133
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_1283.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam2_90.jpg",
+        "bounding_boxes": [
+            {
+                "x": 268,
+                "y": 285,
+                "width": 86,
+                "height": 172
+            },
+            {
+                "x": 276,
+                "y": 58,
+                "width": 106,
+                "height": 212
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_390.jpg",
+        "bounding_boxes": [
+            {
+                "x": 204,
+                "y": 171,
+                "width": 156,
+                "height": 309
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_450.jpg",
+        "bounding_boxes": [
+            {
+                "x": 217,
+                "y": 188,
+                "width": 141,
+                "height": 282
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_180.jpg",
+        "bounding_boxes": [
+            {
+                "x": 315,
+                "y": 266,
+                "width": 70,
+                "height": 139
+            },
+            {
+                "x": 263,
+                "y": 140,
+                "width": 109,
+                "height": 219
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_270.jpg",
+        "bounding_boxes": [
+            {
+                "x": 240,
+                "y": 257,
+                "width": 83,
+                "height": 166
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_360.jpg",
+        "bounding_boxes": []
+    },
+    {
+        "file_name": "cam1_720.jpg",
+        "bounding_boxes": [
+            {
+                "x": 281,
+                "y": 210,
+                "width": 90,
+                "height": 180
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_30.jpg",
+        "bounding_boxes": [
+            {
+                "x": 286,
+                "y": 91,
+                "width": 104,
+                "height": 208
+            }
+        ]
+    }
+]
