@@ -5,7 +5,7 @@ import numpy as np
 # Description: Detect pedestrians in an image using the
 #   Histogram of Oriented Gradients (HOG) method
 
-filename = "../../Images/Experiment/SET3/cam1_1193.jpg"
+filename = "../../Images/Experiment/SET3/cam1_1103.jpg"
 
 def main():
     # Create a HOGDescriptor object
@@ -48,7 +48,7 @@ def main():
     # Create the output file name by removing the '.jpg' part
     size = len(filename)
     new_filename = filename[:size - 4]
-    new_filename = new_filename + '_detect.jpg'
+    new_filename = new_filename + '_detect_HOG.jpg'
 
     # Save the new image in the working directory
     cv2.imwrite(new_filename, image)
