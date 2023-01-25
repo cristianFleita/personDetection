@@ -5,7 +5,9 @@ import os
 import cv2
 
 # DIRECTORY_PATH = "../Images/Experiment/SET3"
-DIRECTORY_PATH = "../Images/Test"
+# DIRECTORY_PATH = "../Images/Test"
+
+DIRECTORY_PATH = "Images\Test"
 
 def show_bounding_boxes(image_manager, image, image_bounding_boxes):
     for bounding_boxes in image_bounding_boxes:
@@ -22,10 +24,15 @@ def show_bounding_boxes(image_manager, image, image_bounding_boxes):
         image_manager.show_image(image.get("image"))
 
 if __name__== "__main__":
+    #Read the folder in windows
+    file_dir = os.path.split (os.path.dirname(__file__)) [0]
+    file_name = os.path.join(file_dir, DIRECTORY_PATH)
+    print (file_name)
+
     detector = HogDetector()
     image_manager = ImageManager()
 
-    images = image_manager.load_images_from_folder(DIRECTORY_PATH)
+    images = image_manager.load_images_from_folder(file_name)
     matrix_detection = []
     detections = { 
                     "file_name": "",
