@@ -1,0 +1,170 @@
+[
+    {
+        "file_name": "pedestrians_2.jpg",
+        "bounding_boxes": [
+            {
+                "x": 123,
+                "y": 125,
+                "width": 102,
+                "height": 203
+            },
+            {
+                "x": 243,
+                "y": 118,
+                "width": 108,
+                "height": 216
+            },
+            {
+                "x": 353,
+                "y": 111,
+                "width": 115,
+                "height": 229
+            }
+        ]
+    },
+    {
+        "file_name": "pedestrians_6.jpg",
+        "bounding_boxes": [
+            {
+                "x": 317,
+                "y": 122,
+                "width": 76,
+                "height": 152
+            },
+            {
+                "x": 414,
+                "y": 193,
+                "width": 79,
+                "height": 157
+            },
+            {
+                "x": 285,
+                "y": 93,
+                "width": 154,
+                "height": 308
+            }
+        ]
+    },
+    {
+        "file_name": "pedestrians_3.jpg",
+        "bounding_boxes": [
+            {
+                "x": 56,
+                "y": 27,
+                "width": 70,
+                "height": 141
+            },
+            {
+                "x": 91,
+                "y": 30,
+                "width": 66,
+                "height": 132
+            },
+            {
+                "x": 5,
+                "y": 33,
+                "width": 72,
+                "height": 143
+            },
+            {
+                "x": 152,
+                "y": 42,
+                "width": 69,
+                "height": 137
+            },
+            {
+                "x": 211,
+                "y": 40,
+                "width": 64,
+                "height": 133
+            }
+        ]
+    },
+    {
+        "file_name": "pedestrians_1.jpg",
+        "bounding_boxes": [
+            {
+                "x": 364,
+                "y": 159,
+                "width": 67,
+                "height": 133
+            },
+            {
+                "x": 179,
+                "y": 182,
+                "width": 65,
+                "height": 130
+            },
+            {
+                "x": 221,
+                "y": 189,
+                "width": 76,
+                "height": 152
+            },
+            {
+                "x": 267,
+                "y": 179,
+                "width": 84,
+                "height": 168
+            },
+            {
+                "x": 412,
+                "y": 146,
+                "width": 132,
+                "height": 254
+            }
+        ]
+    },
+    {
+        "file_name": "pedestrians_4.png",
+        "bounding_boxes": [
+            {
+                "x": 506,
+                "y": 231,
+                "width": 117,
+                "height": 234
+            },
+            {
+                "x": 328,
+                "y": 80,
+                "width": 195,
+                "height": 389
+            }
+        ]
+    },
+    {
+        "file_name": "pedestrians_5.jpg",
+        "bounding_boxes": [
+            {
+                "x": 52,
+                "y": 21,
+                "width": 75,
+                "height": 150
+            },
+            {
+                "x": 106,
+                "y": 28,
+                "width": 67,
+                "height": 134
+            },
+            {
+                "x": 396,
+                "y": 363,
+                "width": 119,
+                "height": 238
+            },
+            {
+                "x": 499,
+                "y": 136,
+                "width": 269,
+                "height": 538
+            },
+            {
+                "x": 247,
+                "y": 74,
+                "width": 325,
+                "height": 638
+            }
+        ]
+    }
+]
