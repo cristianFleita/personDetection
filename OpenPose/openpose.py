@@ -5,15 +5,15 @@ import numpy as np
 from random import randint
 import argparse
 
-filename = "../Images/Experiment/SET2/cam1_1193.jpg"
+# filename = "../Images/Experiment/SET2/cam1_1193.jpg"
 
 parser = argparse.ArgumentParser(description='Run keypoint detection')
 parser.add_argument("--device", default="cpu", help="Device to inference on")
-parser.add_argument("--image_file", default = filename, help="Input image")
+# parser.add_argument("--image_file", default = filename, help="Input image")
 
 args = parser.parse_args()
 
-image1 = cv2.imread(args.image_file)
+# image1 = cv2.imread(args.image_file)
 
 protoFile = "pose/coco/pose_deploy_linevec.prototxt"
 weightsFile = "pose/coco/pose_iter_440000.caffemodel"
@@ -60,7 +60,7 @@ def getKeypoints(probMap, threshold=0.1):
 
 
 # Find valid connections between the different joints of a all persons present
-def getValidPairs(output):
+def getValidPairs(output, frameWidth, frameHeight, detected_keypoints):
     valid_pairs = []
     invalid_pairs = []
     n_interp_samples = 10
@@ -135,7 +135,7 @@ def getValidPairs(output):
 
 # This function creates a list of keypoints belonging to each person
 # For each detected valid pair, it assigns the joint(s) to a person
-def getPersonwiseKeypoints(valid_pairs, invalid_pairs):
+def getPersonwiseKeypoints(valid_pairs, invalid_pairs, keypoints_list):
     # the last number in each row is the overall score
     personwiseKeypoints = -1 * np.ones((0, 19))
 
@@ -168,99 +168,105 @@ def getPersonwiseKeypoints(valid_pairs, invalid_pairs):
                     personwiseKeypoints = np.vstack([personwiseKeypoints, row])
     return personwiseKeypoints
 
+def process_keypoints(image1, filename):
+    frameWidth = image1.shape[1]
+    frameHeight = image1.shape[0]
 
-frameWidth = image1.shape[1]
-frameHeight = image1.shape[0]
+    t = time.time()
+    net = cv2.dnn.readNetFromCaffe(protoFile, weightsFile)
+    if args.device == "cpu":
+        net.setPreferableBackend(cv2.dnn.DNN_TARGET_CPU)
+        print("Using CPU device")
+    elif args.device == "gpu":
+        net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
+        net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
+        print("Using GPU device")
 
-t = time.time()
-net = cv2.dnn.readNetFromCaffe(protoFile, weightsFile)
-if args.device == "cpu":
-    net.setPreferableBackend(cv2.dnn.DNN_TARGET_CPU)
-    print("Using CPU device")
-elif args.device == "gpu":
-    net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
-    net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
-    print("Using GPU device")
+    # Fix the input Height and get the width according to the Aspect Ratio
+    inHeight = 368
+    inWidth = int((inHeight/frameHeight)*frameWidth)
 
-# Fix the input Height and get the width according to the Aspect Ratio
-inHeight = 368
-inWidth = int((inHeight/frameHeight)*frameWidth)
+    inpBlob = cv2.dnn.blobFromImage(image1, 1.0 / 255, (inWidth, inHeight),
+                            (0, 0, 0), swapRB=False, crop=False)
 
-inpBlob = cv2.dnn.blobFromImage(image1, 1.0 / 255, (inWidth, inHeight),
-                          (0, 0, 0), swapRB=False, crop=False)
+    net.setInput(inpBlob)
+    output = net.forward()
+    print("Time Taken in forward pass = {}".format(time.time() - t))
 
-net.setInput(inpBlob)
-output = net.forward()
-print("Time Taken in forward pass = {}".format(time.time() - t))
+    detected_keypoints = []
+    keypoints_list = np.zeros((0,3))
+    keypoint_id = 0
+    threshold = 0.1
+    kps_array = []
+    dict = {
+            "key_point":"",
+            "value":""
+            }
 
-detected_keypoints = []
-keypoints_list = np.zeros((0,3))
-keypoint_id = 0
-threshold = 0.1
-kps_array = []
-dict = {
-        "key_point":"",
-        "value":""
-        }
+    values_dict = {
+                    "x":"",
+                    "y":""
+                    }
 
-values_dict = {
-                "x":"",
-                "y":""
-                }
+    for part in range(nPoints):
+        probMap = output[0,part,:,:]
+        probMap = cv2.resize(probMap, (image1.shape[1], image1.shape[0]))
+        keypoints = getKeypoints(probMap, threshold)
 
-for part in range(nPoints):
-    probMap = output[0,part,:,:]
-    probMap = cv2.resize(probMap, (image1.shape[1], image1.shape[0]))
-    keypoints = getKeypoints(probMap, threshold)
+        # name_part = keypointsMapping[part]
+        dict["key_point"] = part
 
-    dict["key_point"] = keypointsMapping[part]
-    
-    array_key_point = []
-    for keypoint in keypoints:
-        values_dict["x"] = keypoint[0]
-        values_dict["y"] = keypoint[1]
-        array_key_point.append(values_dict.copy())
-    dict["value"] = array_key_point
-    kps_array.append(dict.copy())
+        array_key_point = []
+        for keypoint in keypoints:
+            values_dict["x"] = keypoint[0]
+            values_dict["y"] = keypoint[1]
+            array_key_point.append(values_dict.copy())
+        dict["value"] = array_key_point
+        kps_array.append(dict.copy())
 
-    #print("{} : {}".format(keypointsMapping[part], keypoints))
-    keypoints_with_id = []
-    for i in range(len(keypoints)):
-        keypoints_with_id.append(keypoints[i] + (keypoint_id,))
-        keypoints_list = np.vstack([keypoints_list, keypoints[i]])
-        keypoint_id += 1
+        #print("{} : {}".format(keypointsMapping[part], keypoints))
+        keypoints_with_id = []
+        for i in range(len(keypoints)):
+            keypoints_with_id.append(keypoints[i] + (keypoint_id,))
+            keypoints_list = np.vstack([keypoints_list, keypoints[i]])
+            keypoint_id += 1
 
-    detected_keypoints.append(keypoints_with_id)
+        detected_keypoints.append(keypoints_with_id)
 
-json_object = json.dumps(kps_array, indent=4)
+    frameClone = draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, keypoints_list)
+    #Create the output file name by removing the '.jpg' part
+    save_result(frameClone, filename)
 
-with open('detected_keypoints.json', 'w') as json_file:
-        json_file.write(json_object)
+    return kps_array
 
-frameClone = image1.copy()
-for i in range(nPoints):
-    for j in range(len(detected_keypoints[i])):
-        cv2.circle(frameClone, detected_keypoints[i][j][0:2], 5, colors[i], -1, cv2.LINE_AA)
-cv2.imshow("Keypoints",frameClone)
+def save_result(frameClone, filename):
+    size = len(filename)
+    new_filename = filename[:size - 4]
+    new_filename = new_filename + '_detect.jpg'
+    cv2.imwrite( new_filename, frameClone)
 
-valid_pairs, invalid_pairs = getValidPairs(output)
-personwiseKeypoints = getPersonwiseKeypoints(valid_pairs, invalid_pairs)
 
-for i in range(17):
-    for n in range(len(personwiseKeypoints)):
-        index = personwiseKeypoints[n][np.array(POSE_PAIRS[i])]
-        if -1 in index:
-            continue
-        B = np.int32(keypoints_list[index.astype(int), 0])
-        A = np.int32(keypoints_list[index.astype(int), 1])
-        cv2.line(frameClone, (B[0], A[0]), (B[1], A[1]), colors[i], 3, cv2.LINE_AA)
+def draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, keypoints_list):
+    frameClone = image1.copy()
+    for i in range(nPoints):
+        for j in range(len(detected_keypoints[i])):
+            cv2.circle(frameClone, detected_keypoints[i][j][0:2], 5, colors[i], -1, cv2.LINE_AA)
+    #cv2.imshow("Keypoints",frameClone)
 
-# Create the output file name by removing the '.jpg' part
-size = len(filename)
-new_filename = filename[:size - 4]
-new_filename = new_filename + '_detect.jpg'
-cv2.imwrite( new_filename, frameClone)
+    valid_pairs, invalid_pairs = getValidPairs(output, frameWidth, frameHeight, detected_keypoints)
+    personwiseKeypoints = getPersonwiseKeypoints(valid_pairs, invalid_pairs, keypoints_list)
 
-cv2.imshow("Detected Pose" , frameClone)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+    for i in range(17):
+        for n in range(len(personwiseKeypoints)):
+            index = personwiseKeypoints[n][np.array(POSE_PAIRS[i])]
+            if -1 in index:
+                continue
+            B = np.int32(keypoints_list[index.astype(int), 0])
+            A = np.int32(keypoints_list[index.astype(int), 1])
+            cv2.line(frameClone, (B[0], A[0]), (B[1], A[1]), colors[i], 3, cv2.LINE_AA)
+
+
+    # cv2.imshow("Detected Pose" , frameClone)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+    return frameClone

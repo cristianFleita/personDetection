@@ -8,7 +8,8 @@ class ImageManager:
         self.parser = argparse.ArgumentParser(description='Run image manager')
 
     def load_image(self, file_name):
-        return cv2.imread(file_name)
+        file_name = self.parse_directory( file_name, self.parser)
+        return cv2.imread( file_name), file_name
 
     def save_image(self, image, file_name):
         cv2.imwrite(file_name, image)
@@ -21,6 +22,7 @@ class ImageManager:
     def parse_directory(self, directory, parser):
         parser.add_argument("--image_file", default = directory, help="Input image")
         args = parser.parse_args()
+        
         return args.image_file
 
     def load_images_from_directory(self, directory_path):

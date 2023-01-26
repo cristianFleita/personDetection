@@ -1,0 +1,6801 @@
+[
+    {
+        "file_name": "cam1_1013.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 257
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 295,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 234
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_1103.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 303,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 295,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 234
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_1103_detect.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": []
+            },
+            {
+                "key_point": 2,
+                "value": []
+            },
+            {
+                "key_point": 3,
+                "value": []
+            },
+            {
+                "key_point": 4,
+                "value": []
+            },
+            {
+                "key_point": 5,
+                "value": []
+            },
+            {
+                "key_point": 6,
+                "value": []
+            },
+            {
+                "key_point": 7,
+                "value": []
+            },
+            {
+                "key_point": 8,
+                "value": []
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": []
+            },
+            {
+                "key_point": 17,
+                "value": []
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_1193.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 267
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 303,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 303,
+                        "y": 275
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 275
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 288
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 316,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 275
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 288
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 235
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 235
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_1193_detect.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": []
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": []
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 275
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 267
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": []
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_120.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 407,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 397,
+                        "y": 277
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 277
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 243,
+                        "y": 382
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 391
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 489,
+                        "y": 277
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 550,
+                        "y": 390
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 501,
+                        "y": 391
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": []
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 387,
+                        "y": 161
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 418,
+                        "y": 160
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 365,
+                        "y": 182
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 438,
+                        "y": 172
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_1283.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 295,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 303,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 275
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 235
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 236
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_150.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 396,
+                        "y": 192
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 387,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 275
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 359
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 369
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 459,
+                        "y": 267
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 510,
+                        "y": 350
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 480,
+                        "y": 350
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 336,
+                        "y": 463
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 376,
+                        "y": 182
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 406,
+                        "y": 181
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 193
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 417,
+                        "y": 192
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_180.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 376,
+                        "y": 202
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 367,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 272,
+                        "y": 348
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 349
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 429,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 479,
+                        "y": 337
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 448,
+                        "y": 340
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 463
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 409,
+                        "y": 454
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 357,
+                        "y": 191
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 386,
+                        "y": 183
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 344,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 396,
+                        "y": 193
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_210.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 357,
+                        "y": 204
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 328
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 328
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 407,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 449,
+                        "y": 319
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 418,
+                        "y": 328
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 424
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 397,
+                        "y": 422
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 346,
+                        "y": 202
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 366,
+                        "y": 194
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 204
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 377,
+                        "y": 203
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_240.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 204
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 282,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 397,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 438,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 417,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 326,
+                        "y": 411
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 387,
+                        "y": 411
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 365,
+                        "y": 202
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 376,
+                        "y": 204
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_270.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 214
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 386,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 418,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 397,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 391
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 326,
+                        "y": 476
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 376,
+                        "y": 391
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 376,
+                        "y": 476
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 212
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 346,
+                        "y": 204
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 214
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 212
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_30.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": []
+            },
+            {
+                "key_point": 2,
+                "value": []
+            },
+            {
+                "key_point": 3,
+                "value": []
+            },
+            {
+                "key_point": 4,
+                "value": []
+            },
+            {
+                "key_point": 5,
+                "value": []
+            },
+            {
+                "key_point": 6,
+                "value": []
+            },
+            {
+                "key_point": 7,
+                "value": []
+            },
+            {
+                "key_point": 8,
+                "value": []
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": []
+            },
+            {
+                "key_point": 17,
+                "value": []
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_300.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 346,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 347,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 292,
+                        "y": 298
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 306
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 386,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 417,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 397,
+                        "y": 306
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 326,
+                        "y": 370
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 443
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 376,
+                        "y": 370
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 367,
+                        "y": 443
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 344,
+                        "y": 204
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 355,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 214
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 365,
+                        "y": 213
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_330.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 214
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 376,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 397,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 377,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 431
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 476
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 366,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 365,
+                        "y": 433
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 476
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 346,
+                        "y": 204
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 214
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 355,
+                        "y": 213
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_360.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 344,
+                        "y": 214
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 375,
+                        "y": 254
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 396,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 377,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 349
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 412
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 326,
+                        "y": 476
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 365,
+                        "y": 349
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 412
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 464
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 214
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 355,
+                        "y": 213
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_390.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 377,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 366,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 340
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 400
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 443
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 355,
+                        "y": 339
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 355,
+                        "y": 392
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 346,
+                        "y": 443
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 235
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 323,
+                        "y": 235
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": []
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 234
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_60.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 530,
+                        "y": 119
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 500,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 326,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": []
+            },
+            {
+                "key_point": 4,
+                "value": []
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 625,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": []
+            },
+            {
+                "key_point": 7,
+                "value": []
+            },
+            {
+                "key_point": 8,
+                "value": []
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 489,
+                        "y": 97
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 551,
+                        "y": 89
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 427,
+                        "y": 150
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": []
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_630.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 225
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 303,
+                        "y": 246
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 285,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 306
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 338
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 306
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 339
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 224
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_720.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 225
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 344,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 328
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 329
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 225
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 225
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_743.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 303,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 339
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 340
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 225
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 225
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 233
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_833.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 285
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 285
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 319
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 285
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 327
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 234
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_90.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 448,
+                        "y": 150
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 428,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 298
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 243,
+                        "y": 432
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": []
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 542,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": []
+            },
+            {
+                "key_point": 7,
+                "value": []
+            },
+            {
+                "key_point": 8,
+                "value": []
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 418,
+                        "y": 130
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 459,
+                        "y": 130
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 378,
+                        "y": 171
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 480,
+                        "y": 151
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam1_923.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 295,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 295,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 298
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 298
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 234
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_1013.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 233
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 264,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 272,
+                        "y": 275
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 295,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 292,
+                        "y": 275
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 292,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 282,
+                        "y": 225
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 225
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 233
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 225
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_1103.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 295,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 295,
+                        "y": 267
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 272,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 267
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 267
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 288
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 275,
+                        "y": 267
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 282,
+                        "y": 288
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 292,
+                        "y": 233
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 233
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_1193.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 233
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 282,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 282,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 225
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 225
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 225
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_120.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 347,
+                        "y": 162
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 253,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 190,
+                        "y": 381
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 253,
+                        "y": 391
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 428,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 500,
+                        "y": 381
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 459,
+                        "y": 380
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": []
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 151
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 366,
+                        "y": 151
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 182
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 377,
+                        "y": 181
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_1283.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 282,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 282,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 285,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 234
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_150.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 183
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 336,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 272,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 221,
+                        "y": 359
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 408,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 469,
+                        "y": 349
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 437,
+                        "y": 358
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": []
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 173
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 355,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 192
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 366,
+                        "y": 183
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_180.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 193
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 263,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 221,
+                        "y": 340
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 272,
+                        "y": 348
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 387,
+                        "y": 264
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 437,
+                        "y": 329
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 398,
+                        "y": 339
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 454
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 376,
+                        "y": 463
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 183
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 182
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 202
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 192
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_210.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 263,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 231,
+                        "y": 328
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 264,
+                        "y": 328
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 365,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 407,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 377,
+                        "y": 327
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 422
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 355,
+                        "y": 422
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 193
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 193
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 203
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_240.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 241,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 272,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 397,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 375,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 402
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 346,
+                        "y": 410
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 194
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 324,
+                        "y": 193
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 204
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 203
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_270.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 263,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 232,
+                        "y": 306
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 272,
+                        "y": 307
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 254
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 377,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 365,
+                        "y": 306
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 391
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 476
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 336,
+                        "y": 390
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 476
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 203
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_30.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 439,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 408,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 242,
+                        "y": 349
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": []
+            },
+            {
+                "key_point": 4,
+                "value": []
+            },
+            {
+                "key_point": 5,
+                "value": []
+            },
+            {
+                "key_point": 6,
+                "value": []
+            },
+            {
+                "key_point": 7,
+                "value": []
+            },
+            {
+                "key_point": 8,
+                "value": []
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 428,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 387,
+                        "y": 152
+                    },
+                    {
+                        "x": 396,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": []
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_300.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 212
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 252,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 298
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 346,
+                        "y": 254
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 376,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 356,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 370
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 443
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 336,
+                        "y": 370
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 443
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 204
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_330.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 254
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 243,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 296
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 336,
+                        "y": 246
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 365,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 285,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 433
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 476
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 360
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 433
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 476
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 285,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 213
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_360.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 213
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 305,
+                        "y": 246
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 254
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 253,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 335,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 357,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 277
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 348
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 411
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 464
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 348
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 402
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 464
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 204
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 313,
+                        "y": 203
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 214
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 213
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_390.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 295,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 252,
+                        "y": 288
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 264,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 325,
+                        "y": 246
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 346,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 334,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 339
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 391
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 443
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 316,
+                        "y": 339
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 391
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 442
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 235
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 235
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": []
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 234
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_60.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 448,
+                        "y": 444
+                    },
+                    {
+                        "x": 448,
+                        "y": 109
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 418,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 261,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": []
+            },
+            {
+                "key_point": 4,
+                "value": []
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 563,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": []
+            },
+            {
+                "key_point": 7,
+                "value": []
+            },
+            {
+                "key_point": 8,
+                "value": []
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 398,
+                        "y": 88
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 449,
+                        "y": 442
+                    },
+                    {
+                        "x": 468,
+                        "y": 87
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 345,
+                        "y": 141
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": []
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_630.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 272,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 253,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 266
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 298
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 338
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 371
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 298
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 339
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 303,
+                        "y": 379
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 223
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 285,
+                        "y": 223
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 224
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_720.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 262,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 303,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 314,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 255
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 288
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 319
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 288
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 319
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 224
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_743.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 272,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 263,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 263,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 329
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 308
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 329
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 285,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 224
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_833.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 295,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 277
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 264,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 263,
+                        "y": 277
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 298
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 298
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 224
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 282,
+                        "y": 224
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_90.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": [
+                    {
+                        "x": 376,
+                        "y": 140
+                    }
+                ]
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 366,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 252,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 180,
+                        "y": 423
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": []
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 480,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 562,
+                        "y": 421
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": []
+            },
+            {
+                "key_point": 8,
+                "value": []
+            },
+            {
+                "key_point": 9,
+                "value": []
+            },
+            {
+                "key_point": 10,
+                "value": []
+            },
+            {
+                "key_point": 11,
+                "value": []
+            },
+            {
+                "key_point": 12,
+                "value": []
+            },
+            {
+                "key_point": 13,
+                "value": []
+            },
+            {
+                "key_point": 14,
+                "value": [
+                    {
+                        "x": 346,
+                        "y": 130
+                    }
+                ]
+            },
+            {
+                "key_point": 15,
+                "value": [
+                    {
+                        "x": 396,
+                        "y": 129
+                    }
+                ]
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 315,
+                        "y": 162
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 416,
+                        "y": 151
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "file_name": "cam2_923.jpg",
+        "image_keypoints": [
+            {
+                "key_point": 0,
+                "value": []
+            },
+            {
+                "key_point": 1,
+                "value": [
+                    {
+                        "x": 284,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 2,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 244
+                    }
+                ]
+            },
+            {
+                "key_point": 3,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 4,
+                "value": [
+                    {
+                        "x": 304,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 5,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "key_point": 6,
+                "value": [
+                    {
+                        "x": 272,
+                        "y": 256
+                    }
+                ]
+            },
+            {
+                "key_point": 7,
+                "value": [
+                    {
+                        "x": 273,
+                        "y": 267
+                    }
+                ]
+            },
+            {
+                "key_point": 8,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 9,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 10,
+                "value": [
+                    {
+                        "x": 294,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "key_point": 11,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 276
+                    }
+                ]
+            },
+            {
+                "key_point": 12,
+                "value": [
+                    {
+                        "x": 275,
+                        "y": 297
+                    }
+                ]
+            },
+            {
+                "key_point": 13,
+                "value": [
+                    {
+                        "x": 274,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "key_point": 14,
+                "value": []
+            },
+            {
+                "key_point": 15,
+                "value": []
+            },
+            {
+                "key_point": 16,
+                "value": [
+                    {
+                        "x": 293,
+                        "y": 234
+                    }
+                ]
+            },
+            {
+                "key_point": 17,
+                "value": [
+                    {
+                        "x": 283,
+                        "y": 234
+                    }
+                ]
+            }
+        ]
+    }
+]
