@@ -203,17 +203,23 @@ dict = {
         "value":""
         }
 
+values_dict = {
+                "x":"",
+                "y":""
+                }
+
 for part in range(nPoints):
     probMap = output[0,part,:,:]
     probMap = cv2.resize(probMap, (image1.shape[1], image1.shape[0]))
     keypoints = getKeypoints(probMap, threshold)
 
     dict["key_point"] = keypointsMapping[part]
+    
     array_key_point = []
     for keypoint in keypoints:
-        x = keypoint[0]
-        y = keypoint[1]
-        array_key_point.append([x,y])
+        values_dict["x"] = keypoint[0]
+        values_dict["y"] = keypoint[1]
+        array_key_point.append(values_dict.copy())
     dict["value"] = array_key_point
     kps_array.append(dict.copy())
 
