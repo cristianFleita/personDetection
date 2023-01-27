@@ -15,28 +15,47 @@ args = parser.parse_args()
 
 # image1 = cv2.imread(args.image_file)
 
-protoFile = "pose/coco/pose_deploy_linevec.prototxt"
-weightsFile = "pose/coco/pose_iter_440000.caffemodel"
-nPoints = 18
-# COCO Output Format
-keypointsMapping = ['Nose', 'Neck', 'R-Sho', 'R-Elb', 'R-Wr', 'L-Sho', 'L-Elb', 'L-Wr', 'R-Hip', 'R-Knee', 'R-Ank', 'L-Hip', 'L-Knee', 'L-Ank', 'R-Eye', 'L-Eye', 'R-Ear', 'L-Ear']
+# protoFile = "pose/coco/pose_deploy_linevec.prototxt"
+# weightsFile = "pose/coco/pose_iter_440000.caffemodel"
 
-POSE_PAIRS = [[1,2], [1,5], [2,3], [3,4], [5,6], [6,7],
-              [1,8], [8,9], [9,10], [1,11], [11,12], [12,13],
-              [1,0], [0,14], [14,16], [0,15], [15,17],
-              [2,17], [5,16] ]
+protoFile = "pose/body_25/pose_deploy.prototxt"
+weightsFile = "pose/body_25/pose_iter_584000.caffemodel"
+
+nPoints = 25
+# COCO Output Format
+# keypointsMapping = ['Nose', 'Neck', 'R-Sho', 'R-Elb', 'R-Wr', 'L-Sho', 'L-Elb', 'L-Wr', 'R-Hip', 'R-Knee', 'R-Ank', 'L-Hip', 'L-Knee', 'L-Ank', 'R-Eye', 'L-Eye', 'R-Ear', 'L-Ear']
+
+keypointsMapping = ["Nose","Neck","RShoulder","RElbow","RWrist","LShoulder","LElbow","LWrist","MidHip","RHip","RKnee","RAnkle","LHip","LKnee","LAnkle","REye","LEye","REar","LEar","LBigToe","LSmallToe","LHeel","RBigToe","RSmallToe","RHeel","Background"]
+
+# POSE_PAIRS = [[1,2], [1,5], [2,3], [3,4], [5,6], [6,7],
+#               [1,8], [8,9], [9,10], [1,11], [11,12], [12,13],
+#               [1,0], [0,14], [14,16], [0,15], [15,17],
+#               [2,17], [5,16] ]
+
+POSE_PAIRS = [ [1, 0], [1, 2], [1, 5], [2, 3], [3, 4], [5, 6], [6, 7], [0, 15], [15, 17],
+                [0, 16], [16, 18], [1, 8], [8, 9], [9, 10], [10, 11], [11, 22], [22, 23],
+                [11, 24], [8, 12], [12, 13], [13, 14], [14, 19], [19, 20], [14, 21]]
+
 
 # index of pafs correspoding to the POSE_PAIRS
 # e.g for POSE_PAIR(1,2), the PAFs are located at indices (31,32) of output, Similarly, (1,5) -> (39,40) and so on.
-mapIdx = [[31,32], [39,40], [33,34], [35,36], [41,42], [43,44],
-          [19,20], [21,22], [23,24], [25,26], [27,28], [29,30],
-          [47,48], [49,50], [53,54], [51,52], [55,56],
-          [37,38], [45,46]]
+mapIdx = [[47,48], [31,32], [39,40], [33,34],
+            [35,36], [41,42], [43,44], [0,15],
+            [15, 17], [0, 16], [16, 18],
+            [19,20], [21,22], [23,24], [10,11]
+            [25,26],
+            [27,28], [29,30], [47,48], [49,50], [53,54],
+            [51,52], [55,56], [37,38], [45,46]]
+
+# mapIdx = [[31,32], [39,40], [33,34], [35,36], [41,42], [43,44],
+#           [19,20], [21,22], [23,24], [25,26], [27,28], [29,30],
+#           [47,48], [49,50], [53,54], [51,52], [55,56],
+#           [37,38], [45,46]]
+
 
 colors = [ [0,100,255], [0,100,255], [0,255,255], [0,100,255], [0,255,255], [0,100,255],
          [0,255,0], [255,200,100], [255,0,255], [0,255,0], [255,200,100], [255,0,255],
-         [0,0,255], [255,0,0], [200,200,0], [255,0,0], [200,200,0], [0,0,0]]
-
+         [0,0,255], [255,0,0], [200,200,0], [255,0,0], [200,200,0], [0,0,0], [0,100,255], [0,100,255], [0,100,255], [0,100,255], [0,100,255], [0,100,255], [0,100,255]]
 
 def getKeypoints(probMap, threshold=0.1):
 
@@ -211,6 +230,8 @@ def process_keypoints(image1, filename):
     for part in range(nPoints):
         probMap = output[0,part,:,:]
         probMap = cv2.resize(probMap, (image1.shape[1], image1.shape[0]))
+        # print("ProbMap = {}".format(probMap))
+
         keypoints = getKeypoints(probMap, threshold)
 
         # name_part = keypointsMapping[part]
@@ -224,7 +245,7 @@ def process_keypoints(image1, filename):
         dict["value"] = array_key_point
         kps_array.append(dict.copy())
 
-        #print("{} : {}".format(keypointsMapping[part], keypoints))
+        # print("{} : {}".format(keypointsMapping[part], keypoints))
         keypoints_with_id = []
         for i in range(len(keypoints)):
             keypoints_with_id.append(keypoints[i] + (keypoint_id,))
@@ -248,15 +269,18 @@ def save_result(frameClone, filename):
 
 def draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, keypoints_list):
     frameClone = image1.copy()
+
     for i in range(nPoints):
         for j in range(len(detected_keypoints[i])):
             cv2.circle(frameClone, detected_keypoints[i][j][0:2], 5, colors[i], -1, cv2.LINE_AA)
-    #cv2.imshow("Keypoints",frameClone)
+    cv2.imshow("Keypoints",frameClone)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
 
     valid_pairs, invalid_pairs = getValidPairs(output, frameWidth, frameHeight, detected_keypoints)
     personwiseKeypoints = getPersonwiseKeypoints(valid_pairs, invalid_pairs, keypoints_list)
 
-    for i in range(17):
+    for i in range(24):
         for n in range(len(personwiseKeypoints)):
             index = personwiseKeypoints[n][np.array(POSE_PAIRS[i])]
             if -1 in index:
