@@ -2,18 +2,12 @@ import cv2
 import json
 import time
 import numpy as np
-from random import randint
 import argparse
-
-# filename = "../Images/Experiment/SET2/cam1_1193.jpg"
 
 parser = argparse.ArgumentParser(description='Run keypoint detection')
 parser.add_argument("--device", default="cpu", help="Device to inference on")
-# parser.add_argument("--image_file", default = filename, help="Input image")
 
 args = parser.parse_args()
-
-# image1 = cv2.imread(args.image_file)
 
 # protoFile = "pose/coco/pose_deploy_linevec.prototxt"
 # weightsFile = "pose/coco/pose_iter_440000.caffemodel"
@@ -22,63 +16,32 @@ protoFile = "pose/body_25/pose_deploy.prototxt"
 weightsFile = "pose/body_25/pose_iter_584000.caffemodel"
 
 nPoints = 25
-# COCO Output Format
-# keypointsMapping = ['Nose', 'Neck', 'R-Sho', 'R-Elb', 'R-Wr', 'L-Sho', 'L-Elb', 'L-Wr', 'R-Hip', 'R-Knee', 'R-Ank', 'L-Hip', 'L-Knee', 'L-Ank', 'R-Eye', 'L-Eye', 'R-Ear', 'L-Ear']
 
-# keypointsMapping = ["Nose","Neck","RShoulder","RElbow","RWrist","LShoulder","LElbow","LWrist","MidHip","RHip","RKnee","RAnkle","LHip","LKnee","LAnkle","REye","LEye","REar","LEar","LBigToe","LSmallToe","LHeel","RBigToe","RSmallToe","RHeel","Background"]
 keypointsMapping = ["Nose", "Neck", "RShoulder", "RElbow", "RWrist", "LShoulder", "LElbow", "LWrist", "MidHip", "RHip", "RKnee", "RAnkle", "LHip", "LKnee", "LAnkle", "REye", "LEye","REar", "LEar", "LBigToe", "LSmallToe", "LHeel", "RBigToe", "RSmallToe", "RHeel"]
-
-#COCO
-# POSE_PAIRS = [[1,2], [1,5], [2,3], [3,4], [5,6], [6,7],
-#               [1,8], [8,9], [9,10], [1,11], [11,12], [12,13],
-#               [1,0], [0,14], [14,16], [0,15], [15,17],
-#               [2,17], [5,16] ]
-
-# POSE_PAIRS = [ [1, 0], [1, 2], [1, 5], [2, 3], [3, 4], [5, 6], [6, 7], [0, 15], [15, 17],
-#                 [0, 16], [16, 18], [1, 8], [8, 9], [9, 10], [10, 11], [11, 22], [22, 23],
-#                 [11, 24], [8, 12], [12, 13], [13, 14], [14, 19], [19, 20], [14, 21]]
-
-# POSE_PAIRS = [[1,0],[1,2],[2,3],[3,4],[1,5],[5,6],[6,7],[1,8],[8,9],[9,10],
-#                 [10,11],[8,12],[12,13],[13,14],[0,15],[0,16],[15,17],[16,18],
-#                 [11,24],[11,22],[14,21],[14,19],[22,23],[19,20]]
 
 POSE_PAIRS = [[1,8], [1,2], [1,5], [2,3], [3,4], [5,6], [6,7],
             [8,9], [9,10], [10,11], [8,12], [12,13], [13,14],
             [1,0], [0,15], [15,17], [0,16], [16,18], [2,17], [5,18],
             [14,19], [19,20], [14,21], [11,22], [22,23], [11,24]]
 
-# POSE_PAIRS =[[0, 1], [0, 15], [0, 16], [1, 2], [1, 5], [1, 8], [8, 9], [8, 12], [9, 10], [12, 13], [2, 3],[3, 4], [5, 6], [6, 7], [10, 11], [13, 14], [15, 17], [16, 18], [14, 21], [19, 21], [20, 21],[11, 24], [22, 24], [23, 24]]
-
-# index of pafs correspoding to the POSE_PAIRS
-# e.g for POSE_PAIR(1,2), the PAFs are located at indices (31,32) of output, Similarly, (1,5) -> (39,40) and so on.
-# mapIdx =  [[30, 31],[14, 15],[16, 17],[18, 19],[22, 23],[24, 25],[26, 27],
-#             [0, 1],[6, 7],[2, 3],[4, 5],  [8, 9],[10, 11],[12, 13],[32, 33],
-#             [34, 35],[36,37],[38,39],[50,51],[46,47],[44,45],[40,41],[48,49],[42,43]]
-
 mapIdx =[[26, 27], [40, 41], [48, 49], [42, 43], [44, 45], [50, 51],
-              [52, 53], [32, 33], [28, 29], [30, 31], [34, 35], [36, 37],
-              [38, 39], [56, 57], [58, 59], [62, 63], [60, 61], [64, 65],
-              [46, 47], [54, 55], [66, 67], [68, 69], [70, 71], [72, 73],
-              [74, 75], [76, 77]]
-
-# mapIdx = [[31,32], [39,40], [33,34], [35,36], [41,42], [43,44],
-#           [19,20], [21,22], [23,24], [25,26], [27,28], [29,30],
-#           [47,48], [49,50], [53,54], [51,52], [55,56],
-#           [37,38], [45,46]]
+            [52, 53], [32, 33], [28, 29], [30, 31], [34, 35], [36, 37],
+            [38, 39], [56, 57], [58, 59], [62, 63], [60, 61], [64, 65],
+            [46, 47], [54, 55], [66, 67], [68, 69], [70, 71], [72, 73],
+            [74, 75], [76, 77]]
 
 
 colors = [[255, 0, 0], [255, 85, 0], [255, 170, 0],
-             [255, 255, 0], [170, 255, 0], [85, 255, 0],
-             [0, 255, 0], [0, 255, 85], [0, 255, 170],
-             [0, 255, 255], [0, 170, 255], [0, 85, 255],
-             [0, 0, 255], [85, 0, 255], [170, 0, 255],
-             [255, 0, 255], [255, 0, 170], [255, 0, 85],
-             [255, 170, 85], [255, 170, 170], [255, 170, 255],
-             [255, 85, 85], [255, 85, 170], [255, 85, 255],
-             [170, 170, 170]]
+            [255, 255, 0], [170, 255, 0], [85, 255, 0],
+            [0, 255, 0], [0, 255, 85], [0, 255, 170],
+            [0, 255, 255], [0, 170, 255], [0, 85, 255],
+            [0, 0, 255], [85, 0, 255], [170, 0, 255],
+            [255, 0, 255], [255, 0, 170], [255, 0, 85],
+            [255, 170, 85], [255, 170, 170], [255, 170, 255],
+            [255, 85, 85], [255, 85, 170], [255, 85, 255],
+            [170, 170, 170]]
 
 def getKeypoints(probMap, threshold=0.1):
-
     mapSmooth = cv2.GaussianBlur(probMap,(3,3),0,0)
 
     mapMask = np.uint8(mapSmooth>threshold)
@@ -97,15 +60,14 @@ def getKeypoints(probMap, threshold=0.1):
 
     return keypoints
 
-
 # Find valid connections between the different joints of a all persons present
 def getValidPairs(output, frameWidth, frameHeight, detected_keypoints):
     valid_pairs = []
     invalid_pairs = []
-    # n_interp_samples = 10
     n_interp_samples = 15
     paf_score_th = 0.1
     conf_th = 0.7
+
     # loop for every POSE_PAIR
     for k in range(len(mapIdx)):
         # A->B constitute a limb
@@ -125,7 +87,6 @@ def getValidPairs(output, frameWidth, frameHeight, detected_keypoints):
         # Calculate the distance vector between the two joints
         # Find the PAF values at a set of interpolated points between the joints
         # Use the above formula to compute a score to mark the connection valid
-
         if( nA != 0 and nB != 0):
             valid_pair = np.zeros((0,3))
             for i in range(nA):
@@ -147,7 +108,7 @@ def getValidPairs(output, frameWidth, frameHeight, detected_keypoints):
                     paf_interp = []
                     for k in range(len(interp_coord)):
                         paf_interp.append([pafA[int(round(interp_coord[k][1])), int(round(interp_coord[k][0]))],
-                                           pafB[int(round(interp_coord[k][1])), int(round(interp_coord[k][0]))] ])
+                                        pafB[int(round(interp_coord[k][1])), int(round(interp_coord[k][0]))] ])
                     # Find E
                     paf_scores = np.dot(paf_interp, d_ij)
                     avg_paf_score = sum(paf_scores)/len(paf_scores)
@@ -169,9 +130,8 @@ def getValidPairs(output, frameWidth, frameHeight, detected_keypoints):
             print("No Connection : k = {}".format(k))
             invalid_pairs.append(k)
             valid_pairs.append([])
+
     return valid_pairs, invalid_pairs
-
-
 
 # This function creates a list of keypoints belonging to each person
 # For each detected valid pair, it assigns the joint(s) to a person
@@ -206,6 +166,7 @@ def getPersonwiseKeypoints(valid_pairs, invalid_pairs, keypoints_list):
                     # add the keypoint_scores for the two keypoints and the paf_score
                     row[-1] = sum(keypoints_list[valid_pairs[k][i,:2].astype(int), 2]) + valid_pairs[k][i][2]
                     personwiseKeypoints = np.vstack([personwiseKeypoints, row])
+    
     return personwiseKeypoints
 
 def process_keypoints(image1, filename):
@@ -287,7 +248,6 @@ def save_result(frameClone, filename):
     new_filename = new_filename + '_detect.jpg'
     cv2.imwrite( new_filename, frameClone)
 
-
 def draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, keypoints_list):
     frameClone = image1.copy()
 
@@ -314,4 +274,5 @@ def draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, 
     cv2.imshow("Detected Pose" , frameClone)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
     return frameClone
