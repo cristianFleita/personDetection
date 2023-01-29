@@ -23,6 +23,7 @@ if __name__== "__main__":
     
     for image in images:
         file_name = image.get("file_name")
+        print(file_name)
         image_keypoints = process_keypoints(image.get("image"), "Results/Images/TEST/"+file_name)
         
         detections["file_name"] = file_name
