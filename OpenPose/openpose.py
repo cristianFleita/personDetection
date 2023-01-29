@@ -102,7 +102,8 @@ def getKeypoints(probMap, threshold=0.1):
 def getValidPairs(output, frameWidth, frameHeight, detected_keypoints):
     valid_pairs = []
     invalid_pairs = []
-    n_interp_samples = 10
+    # n_interp_samples = 10
+    n_interp_samples = 15
     paf_score_th = 0.1
     conf_th = 0.7
     # loop for every POSE_PAIR
@@ -198,7 +199,7 @@ def getPersonwiseKeypoints(valid_pairs, invalid_pairs, keypoints_list):
                     personwiseKeypoints[person_idx][-1] += keypoints_list[partBs[i].astype(int), 2] + valid_pairs[k][i][2]
 
                 # if find no partA in the subset, create a new subset
-                elif not found and k < 25:
+                elif not found and k < 24:
                     row = -1 * np.ones(26)
                     row[indexA] = partAs[i]
                     row[indexB] = partBs[i]
