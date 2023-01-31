@@ -195,16 +195,6 @@ def process_keypoints(image1, filename):
     keypoints_list = np.zeros((0,3))
     keypoint_id = 0
     threshold = 0.1
-    kps_array = []
-    dict = {
-            "key_point":"",
-            "value":""
-            }
-
-    values_dict = {
-                    "x":"",
-                    "y":""
-                    }
 
     for part in range(nPoints):
         probMap = output[0,part,:,:]
@@ -214,16 +204,6 @@ def process_keypoints(image1, filename):
         keypoints = getKeypoints(probMap, threshold)
 
         # name_part = keypointsMapping[part]
-        dict["key_point"] = part
-
-        array_key_point = []
-        for keypoint in keypoints:
-            values_dict["x"] = keypoint[0]
-            values_dict["y"] = keypoint[1]
-            array_key_point.append(values_dict.copy())
-        dict["value"] = array_key_point
-        kps_array.append(dict.copy())
-
         # print("{} : {}".format(keypointsMapping[part], keypoints))
         keypoints_with_id = []
         for i in range(len(keypoints)):
@@ -233,7 +213,7 @@ def process_keypoints(image1, filename):
 
         detected_keypoints.append(keypoints_with_id)
 
-    frameClone = draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, keypoints_list)
+    (frameClone , kps_array) = draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, keypoints_list)
     #Create the output file name by removing the '.jpg' part
     save_result(frameClone, filename)
 
@@ -257,27 +237,57 @@ def draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, 
 
     valid_pairs, invalid_pairs = getValidPairs(output, frameWidth, frameHeight, detected_keypoints)
     personwiseKeypoints = getPersonwiseKeypoints(valid_pairs, invalid_pairs, keypoints_list)
-    
+    kps_array = []
+    person_keypoints_dict = create_person_keypoints_dict()
+    values_dict = {
+                    "x":"",
+                    "y":""
+                    }
+
     for n in range(len(personwiseKeypoints)):
         for i in range(24):
-            index = personwiseKeypoints[n][np.array(POSE_PAIRS[i])]
             # print("KP:", POSE_PAIRS[i])
+            pair = POSE_PAIRS[i]
+            index = personwiseKeypoints[n][np.array(pair)]
+
             if -1 in index:
                 continue
             B = np.int32(keypoints_list[index.astype(int), 0])
             A = np.int32(keypoints_list[index.astype(int), 1])
+            
+            B_key_point_id = str(pair[0])
+            values_dict["x"] = int (B[0])
+            values_dict["y"] = int (A [0])
+
+            person_keypoints_dict[B_key_point_id] = values_dict.copy()
+
+            A_key_point_id = str(pair[1])
+            values_dict["x"] = int (B[1])
+            values_dict["y"] = int (A [1])
+
+            person_keypoints_dict[A_key_point_id] = values_dict.copy()
+
             # print("A= y coord:",A)
             # print("B:= x cooord",B)
+
+            # pair[0] = [ (x = B[0] , y = A [0] ) ]
+            # pair[1] = [ (x = B[1] , y = A [1] ) ]
             
+            # print(pair[0])
+            # print(pair[1])
+
             cv2.line(frameClone, (B[0], A[0]), (B[1], A[1]), colors[i], 3, cv2.LINE_AA)
+        
+        kps_array.append (person_keypoints_dict)
 
     cv2.imshow("Detected Pose" , frameClone)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-    return frameClone
 
-def create_perso_keypoints_dict():
+    return frameClone , kps_array
+
+def create_person_keypoints_dict():
     dict = {
             "0": "",
             "1": "",
@@ -303,6 +313,7 @@ def create_perso_keypoints_dict():
             "21": "",
             "22": "",
             "23": "",
-            "24": ""}
+            "24": ""
+            }
 
     return dict.copy()
