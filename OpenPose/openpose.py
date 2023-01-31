@@ -9,9 +9,6 @@ parser.add_argument("--device", default="cpu", help="Device to inference on")
 
 args = parser.parse_args()
 
-# protoFile = "pose/coco/pose_deploy_linevec.prototxt"
-# weightsFile = "pose/coco/pose_iter_440000.caffemodel"
-
 protoFile = "pose/body_25/pose_deploy.prototxt"
 weightsFile = "pose/body_25/pose_iter_584000.caffemodel"
 
@@ -273,9 +270,6 @@ def draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, 
             # print("B:= x cooord",B)
             
             cv2.line(frameClone, (B[0], A[0]), (B[1], A[1]), colors[i], 3, cv2.LINE_AA)
-
-
-
 
     cv2.imshow("Detected Pose" , frameClone)
     cv2.waitKey(0)
