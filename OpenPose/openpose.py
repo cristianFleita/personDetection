@@ -280,9 +280,9 @@ def draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, 
         
         kps_array.append (person_keypoints_dict.copy())
 
-    cv2.imshow("Detected Pose" , frameClone)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    # cv2.imshow("Detected Pose" , frameClone)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
 
 
     return frameClone , kps_array

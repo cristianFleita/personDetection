@@ -9,7 +9,8 @@ parser = argparse.ArgumentParser(description='Run keypoint detection')
 parser.add_argument("--device", default="cpu", help="Device to inference on")
 args = parser.parse_args()
 
-directory_path =  "../Images/Test"
+set_name = "/SET3"
+directory_path =  "../Images/Experiment" + set_name
 
 if __name__== "__main__":
     image_manager = ImageManager()
@@ -24,7 +25,7 @@ if __name__== "__main__":
     for image in images:
         file_name = image.get("file_name")
         print(file_name)
-        image_keypoints = process_keypoints(image.get("image"), "Results/Images/TEST/"+file_name)
+        image_keypoints = process_keypoints(image.get("image"), "Results/Images" + set_name + "/" + file_name)
         
         detections["file_name"] = file_name
         detections["image_keypoints"] = image_keypoints
