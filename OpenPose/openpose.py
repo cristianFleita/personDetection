@@ -228,6 +228,7 @@ def save_result(frameClone, filename):
 def draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, keypoints_list):
     frameClone = image1.copy()
 
+    #Draw the keypoints
     for i in range(nPoints):
         for j in range(len(detected_keypoints[i])):
             cv2.circle(frameClone, detected_keypoints[i][j][0:2], 5, colors[i], -1, cv2.LINE_AA)
@@ -245,7 +246,7 @@ def draw_keypoints(image1, frameWidth, frameHeight, output, detected_keypoints, 
                     }
 
     for n in range(len(personwiseKeypoints)):
-        for i in range(24):
+        for i in range(nPoints-1):
             # print("KP:", POSE_PAIRS[i])
             pair = POSE_PAIRS[i]
             index = personwiseKeypoints[n][np.array(pair)]
