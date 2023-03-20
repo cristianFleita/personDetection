@@ -50,5 +50,5 @@ if __name__== "__main__":
     json_object = json.dumps( matrix_detection, indent = 4 )
     folder_name = os.path.basename(DIRECTORY_PATH).split('/')[-1]
 
-    with open('Results/bounding_boxes_'+ folder_name + '.json', 'w+') as json_file:
+    with open('results/bounding_boxes_'+ folder_name + '.json', 'w+') as json_file:
         json_file.write(json_object)
