@@ -52,7 +52,7 @@ def apply_rectification(image_manager, directory_path):
 
 if __name__ == "__main__":
     image_manager = ImageManager()
-    detector = OpenPoseDetector(protoFile, weightsFile)
+    pose_detector = OpenPoseDetector(protoFile, weightsFile)
     # apply_rectification(image_manager, directory_path)
 
     images = image_manager.load_images_from_directory(directory_path)
@@ -67,7 +67,7 @@ if __name__ == "__main__":
         file_name = image.get("file_name")
         print(file_name)
 
-        (detection_frame, image_keypoints) = detector.process_keypoints(image.get("image"))
+        (detection_frame, image_keypoints) = pose_detector.detect_key_points(image.get("image"))
         cv2.imwrite("Results/Images" + set_name + "/" + file_name, detection_frame)
         detections["file_name"] = file_name
         detections["image_keypoints"] = image_keypoints
