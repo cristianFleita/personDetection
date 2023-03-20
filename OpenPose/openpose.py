@@ -12,35 +12,35 @@ args = parser.parse_args()
 
 class OpenPoseDetector:
     def __init__(self, proto_file, weights_file):
-        self.proto_file = proto_file
-        self.weights_file = weights_file
-        self.nPoints = body25Config.KEY_POINTS_NUMBER
-        self.keypointsMapping = body25Config.KEY_POINTS_MAPPING
+        self.PROTO_FILE_PATH = proto_file
+        self.WEIGHTS_FILE_PATH = weights_file
+        self.KEY_POINTS_NUMBER = body25Config.KEY_POINTS_NUMBER
+        self.KEY_POINTS_MAPPING = body25Config.KEY_POINTS_MAPPING
         self.POSE_PAIRS = body25Config.POSE_PAIRS
-        self.mapIdx = body25Config.MAP_IDX
-        self.colors = body25Config.KEY_POINTS_COLORS
+        self.MAP_IDX = body25Config.MAP_IDX
+        self.KEY_POINT_COLORS = body25Config.KEY_POINTS_COLORS
 
-    def getKeypoints(self, probMap, threshold=0.1):
-        mapSmooth = cv2.GaussianBlur(probMap, (3, 3), 0, 0)
+    def get_key_points(self, probability_map, threshold=0.1):
+        map_smooth = cv2.GaussianBlur(probability_map, (3, 3), 0, 0)
 
-        mapMask = np.uint8(mapSmooth > threshold)
-        keypoints = []
+        map_mask = np.uint8(map_smooth > threshold)
+        key_points = []
 
         # find the blobs
-        contours, _ = cv2.findContours(mapMask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        contours, _ = cv2.findContours(map_mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
         # for each blob find the maxima
         for cnt in contours:
-            blobMask = np.zeros(mapMask.shape)
-            blobMask = cv2.fillConvexPoly(blobMask, cnt, 1)
-            maskedProbMap = mapSmooth * blobMask
-            _, maxVal, _, maxLoc = cv2.minMaxLoc(maskedProbMap)
-            keypoints.append(maxLoc + (probMap[maxLoc[1], maxLoc[0]],))
+            blob_mask = np.zeros(map_mask.shape)
+            blob_mask = cv2.fillConvexPoly(blob_mask, cnt, 1)
+            masked_prob_map = map_smooth * blob_mask
+            _, max_val, _, max_loc = cv2.minMaxLoc(masked_prob_map)
+            key_points.append(max_loc + (probability_map[max_loc[1], max_loc[0]],))
 
-        return keypoints
+        return key_points
 
     # Find valid connections between the different joints of a all persons present
-    def getValidPairs(self, output, frameWidth, frameHeight, detected_keypoints):
+    def getValidPairs(self, output, frame_width, frame_height, detected_key_points):
         valid_pairs = []
         invalid_pairs = []
         n_interp_samples = 15
@@ -48,114 +48,114 @@ class OpenPoseDetector:
         conf_th = 0.7
 
         # loop for every POSE_PAIR
-        for k in range(len(self.mapIdx)):
+        for k in range(len(self.MAP_IDX)):
             # A->B constitute a limb
-            pafA = output[0, self.mapIdx[k][0], :, :]
-            pafB = output[0, self.mapIdx[k][1], :, :]
-            pafA = cv2.resize(pafA, (frameWidth, frameHeight))
-            pafB = cv2.resize(pafB, (frameWidth, frameHeight))
+            paf_a = output[0, self.MAP_IDX[k][0], :, :]
+            paf_b = output[0, self.MAP_IDX[k][1], :, :]
+            paf_a = cv2.resize(paf_a, (frame_width, frame_height))
+            paf_b = cv2.resize(paf_b, (frame_width, frame_height))
 
             # Find the keypoints for the first and second limb
-            candA = detected_keypoints[self.POSE_PAIRS[k][0]]
-            candB = detected_keypoints[self.POSE_PAIRS[k][1]]
-            nA = len(candA)
-            nB = len(candB)
+            cand_a = detected_key_points[self.POSE_PAIRS[k][0]]
+            cand_b = detected_key_points[self.POSE_PAIRS[k][1]]
+            n_a = len(cand_a)
+            n_b = len(cand_b)
 
             # If keypoints for the joint-pair is detected
             # check every joint in candA with every joint in candB
             # Calculate the distance vector between the two joints
             # Find the PAF values at a set of interpolated points between the joints
             # Use the above formula to compute a score to mark the connection valid
-            if (nA != 0 and nB != 0):
+            if (n_a != 0 and n_b != 0):
                 valid_pair = np.zeros((0, 3))
-                for i in range(nA):
+                for i in range(n_a):
                     max_j = -1
-                    maxScore = -1
+                    max_score = -1
                     found = 0
-                    for j in range(nB):
+                    for j in range(n_b):
                         # Find d_ij
-                        d_ij = np.subtract(candB[j][:2], candA[i][:2])
+                        d_ij = np.subtract(cand_b[j][:2], cand_a[i][:2])
                         norm = np.linalg.norm(d_ij)
                         if norm:
                             d_ij = d_ij / norm
                         else:
                             continue
                         # Find p(u)
-                        interp_coord = list(zip(np.linspace(candA[i][0], candB[j][0], num=n_interp_samples),
-                                                np.linspace(candA[i][1], candB[j][1], num=n_interp_samples)))
+                        interp_coord = list(zip(np.linspace(cand_a[i][0], cand_b[j][0], num=n_interp_samples),
+                                                np.linspace(cand_a[i][1], cand_b[j][1], num=n_interp_samples)))
                         # Find L(p(u))
                         paf_interp = []
                         for k in range(len(interp_coord)):
-                            paf_interp.append([pafA[int(round(interp_coord[k][1])), int(round(interp_coord[k][0]))],
-                                               pafB[int(round(interp_coord[k][1])), int(round(interp_coord[k][0]))]])
+                            paf_interp.append([paf_a[int(round(interp_coord[k][1])), int(round(interp_coord[k][0]))],
+                                               paf_b[int(round(interp_coord[k][1])), int(round(interp_coord[k][0]))]])
                         # Find E
                         paf_scores = np.dot(paf_interp, d_ij)
                         avg_paf_score = sum(paf_scores) / len(paf_scores)
 
-                        # Check if the connection is valid
-                        # If the fraction of interpolated vectors aligned with PAF is higher then threshold -> Valid Pair
+                        # Check if the connection is valid If the fraction of interpolated vectors aligned with PAF
+                        # is higher, then threshold -> Valid Pair
                         if (len(np.where(paf_scores > paf_score_th)[0]) / n_interp_samples) > conf_th:
-                            if avg_paf_score > maxScore:
+                            if avg_paf_score > max_score:
                                 max_j = j
-                                maxScore = avg_paf_score
+                                max_score = avg_paf_score
                                 found = 1
                     # Append the connection to the list
                     if found:
-                        valid_pair = np.append(valid_pair, [[candA[i][3], candB[max_j][3], maxScore]], axis=0)
+                        valid_pair = np.append(valid_pair, [[cand_a[i][3], cand_b[max_j][3], max_score]], axis=0)
 
                 # Append the detected connections to the global list
                 valid_pairs.append(valid_pair)
-            else:  # If no keypoints are detected
+            else:  # If no key_points are detected
                 # print("No Connection : k = {}".format(k))
                 invalid_pairs.append(k)
                 valid_pairs.append([])
 
         return valid_pairs, invalid_pairs
 
-    # This function creates a list of keypoints belonging to each person
+    # This function creates a list of key_points belonging to each person
     # For each detected valid pair, it assigns the joint(s) to a person
-    def getPersonwiseKeypoints(self, valid_pairs, invalid_pairs, keypoints_list):
+    def getPersonwiseKeypoints(self, valid_pairs, invalid_pairs, key_points_list):
         # the last number in each row is the overall score
-        personwiseKeypoints = -1 * np.ones((0, 26))
+        person_wise_key_points = -1 * np.ones((0, 26))
 
-        for k in range(len(self.mapIdx)):
+        for k in range(len(self.MAP_IDX)):
             if k not in invalid_pairs:
-                partAs = valid_pairs[k][:, 0]
-                partBs = valid_pairs[k][:, 1]
-                indexA, indexB = np.array(self.POSE_PAIRS[k])
+                part_as = valid_pairs[k][:, 0]
+                part_bs = valid_pairs[k][:, 1]
+                index_a, index_b = np.array(self.POSE_PAIRS[k])
 
                 for i in range(len(valid_pairs[k])):
                     found = 0
                     person_idx = -1
-                    for j in range(len(personwiseKeypoints)):
-                        if personwiseKeypoints[j][indexA] == partAs[i]:
+                    for j in range(len(person_wise_key_points)):
+                        if person_wise_key_points[j][index_a] == part_as[i]:
                             person_idx = j
                             found = 1
                             break
 
                     if found:
-                        personwiseKeypoints[person_idx][indexB] = partBs[i]
-                        personwiseKeypoints[person_idx][-1] += keypoints_list[partBs[i].astype(int), 2] + \
-                                                               valid_pairs[k][i][
-                                                                   2]
+                        person_wise_key_points[person_idx][index_b] = part_bs[i]
+                        person_wise_key_points[person_idx][-1] += key_points_list[part_bs[i].astype(int), 2] + \
+                                                                  valid_pairs[k][i][
+                                                                      2]
 
                     # if find no partA in the subset, create a new subset
                     elif not found and k < 24:
                         row = -1 * np.ones(26)
-                        row[indexA] = partAs[i]
-                        row[indexB] = partBs[i]
-                        # add the keypoint_scores for the two keypoints and the paf_score
-                        row[-1] = sum(keypoints_list[valid_pairs[k][i, :2].astype(int), 2]) + valid_pairs[k][i][2]
-                        personwiseKeypoints = np.vstack([personwiseKeypoints, row])
+                        row[index_a] = part_as[i]
+                        row[index_b] = part_bs[i]
+                        # add the keypoint_scores for the two key_points and the paf_score
+                        row[-1] = sum(key_points_list[valid_pairs[k][i, :2].astype(int), 2]) + valid_pairs[k][i][2]
+                        person_wise_key_points = np.vstack([person_wise_key_points, row])
 
-        return personwiseKeypoints
+        return person_wise_key_points
 
     def process_keypoints(self, image):
-        frameWidth = image.shape[1]
-        frameHeight = image.shape[0]
+        frame_width = image.shape[1]
+        frame_height = image.shape[0]
 
         t = time.time()
-        net = cv2.dnn.readNetFromCaffe(self.proto_file, self.weights_file)
+        net = cv2.dnn.readNetFromCaffe(self.PROTO_FILE_PATH, self.WEIGHTS_FILE_PATH)
         if args.device == "cpu":
             net.setPreferableBackend(cv2.dnn.DNN_TARGET_CPU)
             print("Using CPU device")
@@ -165,93 +165,93 @@ class OpenPoseDetector:
             print("Using GPU device")
 
         # Fix the input Height and get the width according to the Aspect Ratio
-        inHeight = 368
-        inWidth = int((inHeight / frameHeight) * frameWidth)
+        in_height = 368
+        in_width = int((in_height / frame_height) * frame_width)
 
-        inpBlob = cv2.dnn.blobFromImage(image, 1.0 / 255, (inWidth, inHeight),
+        inp_blob = cv2.dnn.blobFromImage(image, 1.0 / 255, (in_width, in_height),
                                         (0, 0, 0), swapRB=False, crop=False)
 
-        net.setInput(inpBlob)
+        net.setInput(inp_blob)
         output = net.forward()
         print("Time Taken in forward pass = {}".format(time.time() - t))
 
-        detected_keypoints = []
-        keypoints_list = np.zeros((0, 3))
+        detected_key_points = []
+        key_points_list = np.zeros((0, 3))
         keypoint_id = 0
         threshold = 0.1
 
-        for part in range(self.nPoints):
-            probMap = output[0, part, :, :]
-            probMap = cv2.resize(probMap, (image.shape[1], image.shape[0]))
+        for part in range(self.KEY_POINTS_NUMBER):
+            prob_map = output[0, part, :, :]
+            prob_map = cv2.resize(prob_map, (image.shape[1], image.shape[0]))
             # print("ProbMap = {}".format(probMap))
 
-            keypoints = self.getKeypoints(probMap, threshold)
+            key_points = self.get_key_points(prob_map, threshold)
 
             # name_part = keypointsMapping[part]
             # print("{} : {}".format(keypointsMapping[part], keypoints))
-            keypoints_with_id = []
-            for i in range(len(keypoints)):
-                keypoints_with_id.append(keypoints[i] + (keypoint_id,))
-                keypoints_list = np.vstack([keypoints_list, keypoints[i]])
+            key_points_with_id = []
+            for i in range(len(key_points)):
+                key_points_with_id.append(key_points[i] + (keypoint_id,))
+                key_points_list = np.vstack([key_points_list, key_points[i]])
                 keypoint_id += 1
 
-            detected_keypoints.append(keypoints_with_id)
+            detected_key_points.append(key_points_with_id)
 
-        (frameClone, kps_array) = self.draw_keypoints(image, frameWidth, frameHeight, output, detected_keypoints,
-                                                      keypoints_list)
+        (frame_clone, kps_array) = self.draw_keypoints(image, frame_width, frame_height, output, detected_key_points,
+                                                      key_points_list)
         # Create the output file name by removing the '.jpg' part
         # self.save_result(frameClone, filename)
 
-        return (frameClone, kps_array)
+        return (frame_clone, kps_array)
 
-    def save_result(self, frameClone, filename):
+    def save_result(self, frame_clone, filename):
         size = len(filename)
         new_filename = filename[:size - 4]
         new_filename = new_filename + '_detect.jpg'
-        cv2.imwrite(new_filename, frameClone)
+        cv2.imwrite(new_filename, frame_clone)
 
-    def draw_keypoints(self, image, frameWidth, frameHeight, output, detected_keypoints, keypoints_list):
-        frameClone = image.copy()
+    def draw_keypoints(self, image, frame_width, frame_height, output, detected_key_points, key_points_list):
+        frame_clone = image.copy()
 
         # Draw the keypoints
-        for i in range(self.nPoints):
-            for j in range(len(detected_keypoints[i])):
-                cv2.circle(frameClone, detected_keypoints[i][j][0:2], 5, self.colors[i], -1, cv2.LINE_AA)
+        for i in range(self.KEY_POINTS_NUMBER):
+            for j in range(len(detected_key_points[i])):
+                cv2.circle(frame_clone, detected_key_points[i][j][0:2], 5, self.KEY_POINT_COLORS[i], -1, cv2.LINE_AA)
         # cv2.imshow("Keypoints",frameClone)
         # cv2.waitKey(0)
         # cv2.destroyAllWindows()
 
-        valid_pairs, invalid_pairs = self.getValidPairs(output, frameWidth, frameHeight, detected_keypoints)
-        personwiseKeypoints = self.getPersonwiseKeypoints(valid_pairs, invalid_pairs, keypoints_list)
+        valid_pairs, invalid_pairs = self.getValidPairs(output, frame_width, frame_height, detected_key_points)
+        person_wise_key_points = self.getPersonwiseKeypoints(valid_pairs, invalid_pairs, key_points_list)
         kps_array = []
-        person_keypoints_dict = self.create_person_keypoints_dict()
+        person_key_points_dict = self.create_person_keypoints_dict()
         values_dict = {
             "x": "",
             "y": ""
         }
 
-        for n in range(len(personwiseKeypoints)):
-            for i in range(self.nPoints - 1):
+        for n in range(len(person_wise_key_points)):
+            for i in range(self.KEY_POINTS_NUMBER - 1):
                 # print("KP:", self.POSE_PAIRS[i])
                 pair = self.POSE_PAIRS[i]
-                index = personwiseKeypoints[n][np.array(pair)]
+                index = person_wise_key_points[n][np.array(pair)]
 
                 if -1 in index:
                     continue
-                B = np.int32(keypoints_list[index.astype(int), 0])
-                A = np.int32(keypoints_list[index.astype(int), 1])
+                b_key_point = np.int32(key_points_list[index.astype(int), 0])
+                a_key_point = np.int32(key_points_list[index.astype(int), 1])
 
-                B_key_point_id = str(pair[0])
-                values_dict["x"] = int(B[0])
-                values_dict["y"] = int(A[0])
+                b_key_point_id = str(pair[0])
+                values_dict["x"] = int(b_key_point[0])
+                values_dict["y"] = int(a_key_point[0])
 
-                person_keypoints_dict[B_key_point_id] = values_dict.copy()
+                person_key_points_dict[b_key_point_id] = values_dict.copy()
 
-                A_key_point_id = str(pair[1])
-                values_dict["x"] = int(B[1])
-                values_dict["y"] = int(A[1])
+                a_key_point_id = str(pair[1])
+                values_dict["x"] = int(b_key_point[1])
+                values_dict["y"] = int(a_key_point[1])
 
-                person_keypoints_dict[A_key_point_id] = values_dict.copy()
+                person_key_points_dict[a_key_point_id] = values_dict.copy()
 
                 # print("A= y coord:",A)
                 # print("B:= x cooord",B)
@@ -262,16 +262,17 @@ class OpenPoseDetector:
                 # print(pair[0])
                 # print(pair[1])
 
-                cv2.line(frameClone, (B[0], A[0]), (B[1], A[1]), self.colors[i], 3, cv2.LINE_AA)
+                cv2.line(frame_clone, (b_key_point[0], a_key_point[0]), (b_key_point[1], a_key_point[1]),
+                         self.KEY_POINT_COLORS[i], 3, cv2.LINE_AA)
 
-            kps_array.append(person_keypoints_dict.copy())
-            person_keypoints_dict = self.create_person_keypoints_dict()
+            kps_array.append(person_key_points_dict.copy())
+            person_key_points_dict = self.create_person_keypoints_dict()
 
         # cv2.imshow("Detected Pose" , frameClone)
         # cv2.waitKey(0)
         # cv2.destroyAllWindows()
 
-        return frameClone, kps_array
+        return frame_clone, kps_array
 
     def create_person_keypoints_dict(self):
         dict = {
